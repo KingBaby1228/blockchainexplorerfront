@@ -7,7 +7,7 @@ var app = new Vue({
         showRecentBlocks(){
             var now = Date.now();
             this.recentBlocks.forEach(block => {
-                block.showtime = pareseInt((now - block.time)/1000/60);
+                block.showtime = parseInt((now - block.time)/1000/60);
                 block.showSizeOnDisk = block.sizeOnDisk.toLocaleString('en');
             });
             return this.recentBlocks;
