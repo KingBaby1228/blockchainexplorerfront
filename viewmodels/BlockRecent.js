@@ -13,15 +13,6 @@ var app = new Vue({
             return this.recentBlocks;
         }
     },
-    /* computed:{
-        showRecentBlocks(){
-            var now = Date.now();
-            this.recentBlocks.forEach(block => {
-                block.showtime = now - block.time;
-            });
-            return this.recentBlocks;
-        }
-    } */
     /* 自动加载 */
     mounted() {
         console.log('view mounted');
