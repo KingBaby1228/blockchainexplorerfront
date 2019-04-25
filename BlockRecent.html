@@ -11,18 +11,18 @@
 
 <body>
     <div id="app">
-        <el-table :data="recentBlocks">
-            <el-table-column prop="height" label="高度">
-                <!--  <template slot-scope="scope">
+        <el-table :data="showRecentBlocks">
+            <el-table-column label="高度">
+                 <template slot-scope="scope">
                     <a :href="'http://www.baidu.com/'+scope.row.height">{{scope.row.height}}</a>
-                </template> -->
+                </template>
             </el-table-column>
-            <el-table-column prop="time" label="日期">
+            <el-table-column prop="showtime" label="日期">
             </el-table-column>
             <el-table-column prop="txSize" label="交易数量">
             </el-table-column>
-            <!-- <el-table-column prop="showSizeOnDisk" label="大小"> -->
-            <el-table-column prop="sizeOnDisk" label="大小">
+            <el-table-column prop="showSizeOnDisk" label="大小">
+            <!-- <el-table-column prop="sizeOnDisk" label="大小"> -->
             </el-table-column>
         </el-table>
     </div>
