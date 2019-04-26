@@ -14,7 +14,7 @@
         <el-table :data="showRecentBlocks">
             <el-table-column label="高度">
                  <template slot-scope="scope">
-                    <a :href="'http://www.baidu.com/'+scope.row.height">{{scope.row.height}}</a>
+                    <a :href="'http://localhost:5000/BlockDetail?blockhash='+scope.row.blockhash">{{scope.row.height}}</a>
                 </template>
             </el-table-column>
             <el-table-column prop="showtime" label="日期">
